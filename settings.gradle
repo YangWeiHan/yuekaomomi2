@@ -1,0 +1,1 @@
+include ':app', ':shoppingcar', ':umeng_demo', ':qr_code', ':daode_demo', ':yuekaomoni0116', ':vidolineretailers'

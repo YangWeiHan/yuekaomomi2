@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:src="@color/colorAccent"
+        android:layout_marginTop="@dimen/dp_40"
+        >
+        <ImageView
+            android:id="@+id/home_menu"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/dp_30"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:src="@mipmap/home_btn_menu"
+
+             />
+        <com.xw.repo.XEditText
+            android:id="@+id/home_menu_edit"
+            android:layout_width="@dimen/dp_220"
+            android:layout_height="@dimen/dp_30"
+            android:paddingLeft="@dimen/dp_10"
+            android:hint="请输入您想要购买的商品!"
+            android:background="@drawable/home_search_shape"
+            app:layout_constraintTop_toTopOf="@id/home_menu"
+            app:layout_constraintBottom_toBottomOf="@id/home_menu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+        <Button
+            android:id="@+id/home_menu_search"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:background="@mipmap/common_search"
+            app:layout_constraintTop_toTopOf="@id/home_menu"
+            app:layout_constraintBottom_toBottomOf="@id/home_menu"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/dp_32"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/home_srcollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:gravity="center_horizontal"
+                android:layerType="software">
+
+                <com.stx.xhb.xbanner.XBanner
+                    android:id="@+id/home_xbanner"
+                    android:layout_width="@dimen/dp_300"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:clipChildren="false"
+                    app:AutoPlayTime="3000"
+                    app:clipChildrenLeftRightMargin="@dimen/dp_10"
+                    app:isClipChildrenMode="true"
+                    app:isShowIndicatorOnlyOne="false"
+                    app:isShowNumberIndicator="true"
+                    app:pageChangeDuration="800"></com.stx.xhb.xbanner.XBanner>
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="@dimen/dp_340"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/hot_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bg_rxxp_syf"
+                    android:gravity="center"
+                    android:text="热销新品"
+                    android:textColor="#ff7f57"
+                    android:textSize="@dimen/sp_16"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_34"
+                    android:layout_height="@dimen/dp_26"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/home_btn_moer_pink"
+                    app:layout_constraintBottom_toBottomOf="@id/hot_goods"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/hot_goods"
+
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rxxp_recyclerView"
+                    android:layout_width="@dimen/dp_340"
+                    android:layout_height="@dimen/dp_166"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@color/colorPrimary"
+                    app:layout_constraintTop_toBottomOf="@id/hot_goods"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="@dimen/dp_340"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <TextView
+                    android:id="@+id/fashion_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bg_mlss_syf"
+                    android:gravity="center"
+                    android:text="魔力时尚"
+                    android:textColor="#5182ff"
+                    android:textSize="@dimen/sp_16"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_34"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/home_btn_more_purple"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mlss_recyclerView"
+                    android:layout_width="@dimen/dp_340"
+                    android:layout_height="@dimen/dp_250"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@color/colorAccent"
+                    app:layout_constraintTop_toBottomOf="@id/fashion_goods"></android.support.v7.widget.RecyclerView>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="@dimen/dp_340"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                >
+
+                <TextView
+                    android:id="@+id/livel_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="品质生活"
+                    android:textColor="#f46a3c"
+                    android:textSize="@dimen/sp_16"
+                    android:background="@mipmap/bg_pzsh_syf"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_34"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp_5"
+                    android:src="@mipmap/common_btn_more_yellow"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/pzss_recyclerView"
+                    android:layout_width="@dimen/dp_340"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/livel_goods"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@color/colorPrimary"
+                    />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

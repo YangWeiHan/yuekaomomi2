@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item>
+                <shape android:shape="rectangle">
+                <solid android:color="@color/colorCheckBok" />//这个画的是最外层，白色至于为什么是最外层不清楚，我是在实际中了解到的，然后往下颜色逐渐变深
+                <corners android:radius="8dp" />
+                <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp" />
+                </shape>
+        </item>
+        <item>
+                <shape android:shape="rectangle">
+                <solid android:color="#f8f4f4" />
+                <corners android:radius="8dp" />
+                <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp" />
+                </shape>
+        </item>
+        <item>
+                <shape android:shape="rectangle">
+                <solid android:color="#eeeaea" />
+                <corners android:radius="8dp" />
+                <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp" />
+                </shape>
+        </item>
+        <item>
+                <shape android:shape="rectangle">
+                <solid android:color="#e2dede" />
+                <corners android:radius="8dp" />
+                <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp" />
+                </shape>
+        </item>
+                <item>
+                <shape android:shape="rectangle">
+                <solid android:color="#d8d4d4" />
+                <corners android:radius="8dp" />
+                <padding
+                android:bottom="1dp"
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp" />
+                </shape>
+        </item>
+        <item>
+                <shape android:shape="rectangle">
+                <solid android:color="#cdcccc" />
+                <corners android:radius="8dp" />
+                <padding
+
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp" />
+                </shape>
+        </item>
+        <item>
+                <shape android:shape="rectangle">
+                <solid android:color="#b7b6b6" />
+                <corners android:radius="8dp" />
+                <padding
+
+                android:left="1dp"
+                android:top="1dp"
+                android:right="1dp" />
+                </shape>
+        </item>
+                <item>
+                <shape android:shape="rectangle">
+                <solid android:color="#a7a7a7" />
+                <corners android:radius="8dp" />
+
+                </shape>
+        </item>
+        <item>
+                <shape android:shape="rectangle">
+                <corners android:radius="7dp" />
+                <solid android:color="@color/colorCheckBok" />
+
+                </shape>
+        </item>
+</layer-list>
+

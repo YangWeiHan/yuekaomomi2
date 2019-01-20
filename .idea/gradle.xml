@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/daode_demo" />
+            <option value="$PROJECT_DIR$/qr_code" />
+            <option value="$PROJECT_DIR$/shoppingcar" />
+            <option value="$PROJECT_DIR$/umeng_demo" />
+            <option value="$PROJECT_DIR$/vidolineretailers" />
+            <option value="$PROJECT_DIR$/yuekaomoni0116" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

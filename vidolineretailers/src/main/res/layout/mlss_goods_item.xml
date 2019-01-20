@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_340"
+    android:layout_height="@dimen/dp_120"
+    android:background="@drawable/rxxp_item_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <ImageView
+        android:layout_width="@dimen/dp_85"
+        android:layout_height="@dimen/dp_100"
+        android:id="@+id/mlss_iv_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:src="@color/colorAccent"
+        />
+    <TextView
+        android:layout_width="@dimen/dp_240"
+        android:layout_height="wrap_content"
+        android:id="@+id/mlss_tv_name"
+        android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toRightOf="@id/mlss_iv_icon"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="@id/mlss_iv_icon"
+        android:padding="@dimen/dp_2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:maxEms="14"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mlss_tv_price"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="@id/mlss_iv_icon"
+        android:text="sfdsfd"
+        app:layout_constraintLeft_toLeftOf="@id/mlss_tv_name"
+        android:textColor="#f00"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

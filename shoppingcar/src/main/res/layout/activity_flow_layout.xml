@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.FlowLayoutActivity">
+    <EditText
+        android:id="@+id/main_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add/添加"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clean"
+        android:text="清除所有"
+        />
+  <!--  <com.example.flowlayout.WeekFlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.example.flowlayout.WeekFlowLayout>-->
+       <!-- <com.example.shoppingcar.activity.WeekFlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flowLayout"></com.example.shoppingcar.activity.WeekFlowLayout>-->
+    <com.example.shoppingcar.ui.weight.WeekFlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flowLayout"></com.example.shoppingcar.ui.weight.WeekFlowLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Jump_ShowPager"
+        android:text="点击跳转展示页面"
+        />
+
+</LinearLayout>
